@@ -1,1 +1,125 @@
+body {
+  margin: 0;
+  background-color: #0b3d5c;
+  font-family: Arial, sans-serif;
+}
 
+h1 {
+  color: white;
+  text-align: center;
+}
+
+/* Khung hồ cá */
+.hoca {
+  position: relative;
+  width: 900px;
+  height: 520px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 6px solid #e8f4fa;
+  border-radius: 12px;
+  background: linear-gradient(#5fc3e8, #1a7bb0, #0d4f7a);
+}
+
+/* Thuộc tính chung cho các sinh vật */
+.hoca img {
+  position: absolute;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Cá mập */
+.shark {
+  width: 200px;
+  top: 60px;
+  animation-name: boi-200;
+  animation-duration: 8s;
+}
+
+/* Rùa */
+.turtle {
+  width: 130px;
+  top: 380px;
+  animation-name: boi-130;
+  animation-duration: 20s;
+}
+
+/* Đàn cá vàng */
+.goldfish {
+  width: 110px;
+  top: 200px;
+  animation-name: boi-110;
+  animation-duration: 10s;
+}
+
+/* Đàn cá nhỏ */
+.faint {
+  width: 180px;
+  top: 300px;
+  animation-name: boi-180;
+  animation-duration: 12s;
+}
+
+/* Thợ lặn */
+.diver1 {
+  width: 220px;
+  top: 130px;
+  animation-name: boi-220;
+  animation-duration: 25s;
+}
+
+.diver2 {
+  width: 220px;
+  top: 430px;
+  animation-name: boi-220;
+  animation-duration: 18s;
+}
+
+.diver3 {
+  width: 220px;
+  top: 10px;
+  animation-name: boi-220;
+  animation-duration: 30s;
+}
+
+/* Hiệu ứng bơi: đi sang phải, quay đầu, bơi về trái.
+   Mỗi hiệu ứng ứng với chiều rộng của ảnh (900 - rộng ảnh) */
+@keyframes boi-200 {
+  0%   { left: 0;     transform: scaleX(1); }
+  49%  { left: 700px; transform: scaleX(1); }
+  50%  { left: 700px; transform: scaleX(-1); }
+  99%  { left: 0;     transform: scaleX(-1); }
+  100% { left: 0;     transform: scaleX(1); }
+}
+
+@keyframes boi-130 {
+  0%   { left: 0;     transform: scaleX(1); }
+  49%  { left: 770px; transform: scaleX(1); }
+  50%  { left: 770px; transform: scaleX(-1); }
+  99%  { left: 0;     transform: scaleX(-1); }
+  100% { left: 0;     transform: scaleX(1); }
+}
+
+@keyframes boi-110 {
+  0%   { left: 0;     transform: scaleX(1); }
+  49%  { left: 790px; transform: scaleX(1); }
+  50%  { left: 790px; transform: scaleX(-1); }
+  99%  { left: 0;     transform: scaleX(-1); }
+  100% { left: 0;     transform: scaleX(1); }
+}
+
+@keyframes boi-180 {
+  0%   { left: 0;     transform: scaleX(1); }
+  49%  { left: 720px; transform: scaleX(1); }
+  50%  { left: 720px; transform: scaleX(-1); }
+  99%  { left: 0;     transform: scaleX(-1); }
+  100% { left: 0;     transform: scaleX(1); }
+}
+
+@keyframes boi-220 {
+  0%   { left: 0;     transform: scaleX(1); }
+  49%  { left: 680px; transform: scaleX(1); }
+  50%  { left: 680px; transform: scaleX(-1); }
+  99%  { left: 0;     transform: scaleX(-1); }
+  100% { left: 0;     transform: scaleX(1); }
+}

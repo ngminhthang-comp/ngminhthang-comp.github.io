@@ -107,3 +107,13 @@ body {
     width: 100%;
   }
 }
+.quaylai {
+  width: 900px;
+  max-width: 100%;
+  margin: 20px auto 0;
+}
+
+.quaylai a {
+  color: #1f4e6b;
+  text-decoration: none;
+}

@@ -123,3 +123,10 @@ h1 {
   99%  { left: 0;     transform: scaleX(-1); }
   100% { left: 0;     transform: scaleX(1); }
 }
+.quaylai {
+  text-align: center;
+}
+
+.quaylai a {
+  color: white;
+}
